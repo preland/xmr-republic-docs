@@ -1,0 +1,14 @@
+# Implementation/Transfer Guide
+
+Note: This plan is not yet complete; no decisions should be made that rely on this plan until important sections (like the Upgrade/Failsafe sections) are finished.
+
+Transitioning from current Monero to this proposed change would be a significant undertaking. This is a guide of a potential transition plan. This does not plan for every contingency, and should not be taken as a complete plan. Any transition made should have a significant amount of planning and consideration taken into account, both in advance conceptually and in practice after the programs for the implementation have been finalized. This is not intended to replace any pre-existing upgrade protocols utilized in Monero. This plan, while not explicitly stated, is created under the presumption that the FCMP upgrade is fully integrated.
+
+1. All of the code for nodes, wallets, and miners will need to be completed in full, so that they are theoretically ready to be used in the upgrade.
+2. A thorough auditing process, in addition to any audits done beforehand, should occur, to make sure that both the code and concepts behind the code are sound.
+3. Once this is completed, a "from-scratch" testnet and subsequent stagenet with the upgraded code should be ran and tested, to ensure that no issues still exist. If issues are found, they should be fixed, and the relevant net should be ran again.
+5. If the "from-scratch" updates were successful, and all issues were resolved, the relevant code for nodes, wallets, and miners should be released for usage on testnet and stagenet.
+4. Once this is completed, testnet should be attempted to be upgraded "live", using the upgrade instructions below. If it fails, make sure that the "failsafe" in the upgrade works, address the failing issue, and continue. If it works properly, the upgrade should be redone multiple times until it "fails" in some way, in order to both ensure that any latent issues are addressed and that the network can recover from any upgrade failure.
+5. Once testnet has been upgraded, repeat step 4 with stagenet.
+6. Once stagenet has been upgraded, distribute the code for nodes, wallets, and miners to all users. Work with 3rd party developers of Monero software to make sure that their code is ready for the upgrade. Once this is done, announce a block for the upgrade to occur on.
+7. Once the block for the upgrade begins, attempt the upgrade. Keep communication channels live and well-informed during this upgrade. If the upgrade fails, ensure that the "failsafe" works properly, and assess and regroup. If the upgrade succeeds, then the upgrade has been successful.

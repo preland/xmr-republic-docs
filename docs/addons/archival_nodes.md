@@ -1,0 +1,3 @@
+# Archival Nodes
+
+In the interest of time, this will be shortened for brevity's sake. It may be desired (or in the case of ZK rollups, required) to maintain a full record of transactions. In order to prevent a scenario where nodes centralize this record in order to save costs, the record needs to be saved in a "unique" manner, where each node's record is unique to themselves, but the underlying information is consistent across all nodes. The algorithm used for this needs to be easy to verify, and fast enough in creation to not pose a challenge during range proof generation, while not being fast enough that nodes can generate this proof on-the-fly.

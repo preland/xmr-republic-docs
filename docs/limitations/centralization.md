@@ -1,0 +1,5 @@
+# Centralization
+
+I am not aware of the current number of active Monero nodes, but I am nearly certain that the count is higher than the chosen consensus size of 1000. This is partially by design, as there should be a healthy amount of competition between nodes, and having too large a consensus size risks there being "consensus vacancies" that could be filled by adversaries.
+
+That being said, there are still centralization risks that this design introduces to the network. A major challenge is that if an adversary has the funds to pay miners above-emission rate, they will have an insurmountable edge against all other participants. This means that the network can be liable to attacks of a similar nature to the current methods of Qubic, though the attack would be less effective in scope of risks, and would require a larger investment in server infrastructure.

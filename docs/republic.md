@@ -283,29 +283,7 @@ as well as lowering the barrier to entry and reducing the effectiveness
 of efficiency techniques (such as ASICs or other systems that reduce the
 capability for normal users to compete).
 
-Arbitrator
 
-Qubic's design utilizes an "Arbitrator", which is a special network
-participant which can remove and replace nodes that are deemed
-problematic or subpar. While their implementation includes a method to
-replace a rogue arbitrator with a 2/3rds supermajority, the power of the
-arbitrator is still too powerful, with a myriad of different scenarios
-and situations where its presence poses a threat to the entire
-governance model. In our upgrade, the task of removing and replacing
-faulty nodes is ran automatically via "node gossip", with nodes being
-replaced by the "alternate" nodes. This ensures a per-epoch fault
-tolerance of 1/6 at the smallest (the percentage amount of alternate
-nodes), and a tolerance of \~½ at the largest (the percentage amount of
-alternative nodes, plus the smallest number of node failures required to
-prevent consensus).
-
-It may be possible to address and mitigate the issues with Qubic's
-arbitrator design. If this is proven feasible, implementing an
-arbitrator-like participant may be desirable, as such a participant, if
-proven to be acting in the interests of the network, would be a
-significant safeguard against latent threats against the network.
-
-*Fee-less Transactions*
 
 Transactions in Qubic do not have any associated fees. While Monero
 Republic could implement this, it would be a significant change to the
