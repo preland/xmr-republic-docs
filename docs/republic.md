@@ -11,30 +11,30 @@ incentive structure to better motivate network growth.
 
 At the time of writing, Monero is the target of a 51% attack by a rival
 chain (src). This attack, while yet to be successful, has shown that
-Nakamura consensus is not enough to prevent an attack. It also shows
+Nakamoto consensus is not enough to prevent an attack. It also shows
 that so-called "economic incentives" are insufficient against attackers
 with non-economic goals; these are not considered within the context of
-Nakamura consensus. Simply put, if an attacker has the capability to
+Nakamoto consensus. Simply put, if an attacker has the capability to
 perform an attack against Monero, and they are not profit-driven, there
 is little that the current consensus model can do to prevent it.
 
-Outside of this current attack, there are other issues with Nakamura
+Outside of this current attack, there are other issues with Nakamoto
 consensus. While the longest chain generally works as an analog for the
 collective will of users, it is utterly blind to their real-world
 intentions and usage. There are many participant behaviors that are
 clearly incompatible with the goals of the collective (ie "selfish"
 mining attacks, needlessly empty or censored blocks) that are entirely
-"kosher" within the bounds of Nakamura consensus. A sensible consensus
+"kosher" within the bounds of Nakamoto consensus. A sensible consensus
 model needs to have the goals of the network embedded within itself,
 rather than projected upon it in such a way that they could be removed
 at a moment's notice.
 
-Additionally, the emission model of traditional Nakamura consensus
+Additionally, the emission model of traditional Nakamoto consensus
 creates "malincentives", or incentives for bad behavior. A number of
-common Nakamura malincentives are either eliminated, as in the case of
+common Nakamoto malincentives are either eliminated, as in the case of
 ASIC mining, or significantly mitigated, as in the case of emission
 decay, in contemporary Monero. However, Monero is not entirely immune of
-Nakamura-derived malincentive.
+Nakamoto-derived malincentive.
 
 For example, a node of some kind is required to mine, but running a node
 is slow, cumbersome, and in some cases an unexpected expense for miners,
@@ -45,7 +45,7 @@ operators, with a significant portion of 198 "unknown" blocks likely
 mined by Qubic. A sensible consensus model needs to proactively remove
 all potential areas for centralization.
 
-The node malincentives derived from Nakamura consensus run deeper than
+The node malincentives derived from Nakamoto consensus run deeper than
 mere miner inconvenience and centralization risks. Running a node yields
 no rewards from emissions nor transaction fees, despite nodes being a
 required part of the Monero network. The blatant discrepancy between the
@@ -320,7 +320,7 @@ be in flux, and will likely see a large amount of iteration.
 
 Sybil
 
-The main challenge when attempting to move away from Nakamura consensus
+The main challenge when attempting to move away from Nakamoto consensus
 is the issue of so-called "Sybil" attacks, where an attacker uses
 multiple identities in order to obtain undue priviledge or advantage.
 Due to the design of Monero Republic, this is a significant design
@@ -343,7 +343,7 @@ honest participants to "override" the attackers and restart the network,
 which is a potential mitigation strategy) before participants could
 "vote" them out at the next epoch. Additionally, the hashrate required
 to perform such an attack would be roughly equivalent to that of a 51%
-attack in a traditional Nakamura consensus system, while still
+attack in a traditional Nakamoto consensus system, while still
 maintaining higher-level "safeguards" against adverse network behavior.
 
 Centralization
@@ -376,7 +376,7 @@ reached, any further failing nodes, alternative or otherwise, will still
 be considered full members of the consensus. If the number of "bad"
 nodes exceeds 50% (1/3 + 1/6), consensus is completely halted, and will
 not be able to fix itself until the next epoch. While this scenario is
-not perfect, it is preferable to the equivalent scenario in Nakamura
+not perfect, it is preferable to the equivalent scenario in Nakamoto
 consensus.
 
 Executive-Legislative Discrepancy
