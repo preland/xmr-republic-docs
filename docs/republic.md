@@ -1,4 +1,4 @@
-Abstract
+**Abstract**
 
 In the interest of time, and in line with the variability of this paper
 in its current state, an abstract is not feasible.
@@ -6,24 +6,6 @@ in its current state, an abstract is not feasible.
 A quick summation: This proposes an upgrade to Monero that would reduce
 the effectiveness of 51% hashrate attacks, while also realigning the
 incentive structure to better motivate network growth.
-
-Table Of Contents
-
-Intro
-
-Consensus
-
-Mining
-
-Zk Rollups
-
-Expected Results
-
-Known Limitations And Issues
-
-Implementation Guide
-
-Additional Add-Ons
 
 **Intro**
 
@@ -76,8 +58,6 @@ runner to upgrade their system to improve the speed of the network. A
 sensible consensus model should not only incentivize participants to
 "secure" the network, but should also encourage scalability, and should
 be proactive in providing fair value to the participants of the network.
-
-\[section abt qubic here\]
 
 This proposed upgrade to Monero, nicknamed "Republic", would transition
 the network from the current consensus model of miners validating blocks
